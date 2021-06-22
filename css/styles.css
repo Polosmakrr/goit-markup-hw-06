@@ -820,11 +820,15 @@ margin-bottom: 12px;
   display: inline-block;
   width: 16px;
   height: 15px;
-  border: 1px solid var(--excretion-color);
+  border: 1px solid var(--text-color);
   border-radius: 2px;
   margin-right: 7px;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.checkbox-block:focus + .icon-mark{
+  border-color: var(--excretion-color);
 }
 
 .checkbox-block:checked + .icon-mark {
