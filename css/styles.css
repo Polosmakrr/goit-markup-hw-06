@@ -666,8 +666,9 @@ p {
 }
 
 .close-modal:hover,
-.close-modal:focus {
+.close-modal:focus-within {
   background-color: #ffffff;
+  fill: var(--excretion-color);
 }
 .close-modal:active{
   fill: var(--excretion-color);
@@ -725,7 +726,7 @@ margin-bottom: 12px;
 }
 
 .form-fild:hover,
-.form-fild:focus,
+.form-fild:focus-within,
 .form-fild input:hover,
 .form-fild input:focus {
   fill: var(--excretion-color);
@@ -734,17 +735,6 @@ margin-bottom: 12px;
 
 .form-fild label{
   margin-bottom: 4px;
-}
-
-.checkbox-block{
-  font-size: 14px;
-  line-height: 1.71px;
-  letter-spacing: 0.03em;
-  margin-top: 20px;
-  margin-bottom: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .link-style{
@@ -806,6 +796,9 @@ margin-bottom: 12px;
   justify-content: center;
   margin-top: 20px;
   margin-bottom: 30px;
+  font-size: 14px;
+  line-height: 1.71px;
+  letter-spacing: 0.03em;
 }
 
 .checkbox-block{
